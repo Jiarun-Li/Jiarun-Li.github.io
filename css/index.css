@@ -172,9 +172,9 @@
   margin: auto;
 }
 .radio-skin,
-.radio-skin--article,
-.radio-skin--app,
-.radio-skin--event {
+.radio-skin--Essay,
+.radio-skin--Education,
+.radio-skin--Musing {
   height: 100%;
   width: 2px;
   border-radius: 1px;
@@ -182,9 +182,9 @@
   transition: all 0.4s ease;
 }
 .radio-skin::after,
-.radio-skin--article::after,
-.radio-skin--app::after,
-.radio-skin--event::after {
+.radio-skin--Essay::after,
+.radio-skin--Education::after,
+.radio-skin--Musing::after {
   transition: all 0.4s ease;
   display: block;
   height: 20px;
@@ -199,22 +199,22 @@
   top: 22px;
   box-shadow: 1px 0 5px rgba(0,0,0,0.2);
 }
-.radio-skin--article::after {
+.radio-skin--Essay::after {
   border-color: #ee936c;
 }
-#radio-article:checked+.radio-skin--article {
+#radio-Essay:checked+.radio-skin--Essay {
   background-color: #ee936c;
 }
-#radio-article:checked+.radio-skin--article::after {
+#radio-Essay:checked+.radio-skin--Essay::after {
   background-color: #ee936c;
   top: -2px;
 }
-.timeline-item-article .line-anchor::after,
-.timeline-item-article--hidden .line-anchor::after {
+.timeline-item-Essay .line-anchor::after,
+.timeline-item-Essay--hidden .line-anchor::after {
   background-color: #ee936c;
 }
-.timeline-item-article .line-date-tag,
-.timeline-item-article--hidden .line-date-tag {
+.timeline-item-Essay .line-date-tag,
+.timeline-item-Essay--hidden .line-date-tag {
   background-color: #ee936c;
 }
 /*
@@ -222,22 +222,22 @@
     font-weight: bold;
   }
   */
-.radio-skin--app::after {
+.radio-skin--Education::after {
   border-color: #60a465;
 }
-#radio-app:checked+.radio-skin--app {
+#radio-Education:checked+.radio-skin--Education {
   background-color: #60a465;
 }
-#radio-app:checked+.radio-skin--app::after {
+#radio-Education:checked+.radio-skin--Education::after {
   background-color: #60a465;
   top: -2px;
 }
-.timeline-item-app .line-anchor::after,
-.timeline-item-app--hidden .line-anchor::after {
+.timeline-item-Education .line-anchor::after,
+.timeline-item-Education--hidden .line-anchor::after {
   background-color: #60a465;
 }
-.timeline-item-app .line-date-tag,
-.timeline-item-app--hidden .line-date-tag {
+.timeline-item-Education .line-date-tag,
+.timeline-item-Education--hidden .line-date-tag {
   background-color: #60a465;
 }
 /*
@@ -245,22 +245,22 @@
     font-weight: bold;
   }
   */
-.radio-skin--event::after {
+.radio-skin--Musing::after {
   border-color: #568dc4;
 }
-#radio-event:checked+.radio-skin--event {
+#radio-Musing:checked+.radio-skin--Musing {
   background-color: #568dc4;
 }
-#radio-event:checked+.radio-skin--event::after {
+#radio-Musing:checked+.radio-skin--Musing::after {
   background-color: #568dc4;
   top: -2px;
 }
-.timeline-item-event .line-anchor::after,
-.timeline-item-event--hidden .line-anchor::after {
+.timeline-item-Musing .line-anchor::after,
+.timeline-item-Musing--hidden .line-anchor::after {
   background-color: #568dc4;
 }
-.timeline-item-event .line-date-tag,
-.timeline-item-event--hidden .line-date-tag {
+.timeline-item-Musing .line-date-tag,
+.timeline-item-Musing--hidden .line-date-tag {
   background-color: #568dc4;
 }
 /*
