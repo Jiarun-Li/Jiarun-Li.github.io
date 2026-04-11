@@ -275,8 +275,7 @@ mjx-container[display="true"] + br {
 <p>云了一些Real Local Langlands的几何化，记录在此：</p>
 <p>几何Langlands的statement（按照我云到的Kapustin-Witten）大致是DMod(Bun_G)对应到L-parameter的几何化。在Real Local Langlands的情况下Scholze考虑如下事物：</p>
 <p>局部解析表示与Weil群代替自守表示与Galois群；</p>
-<p>Twistor P1模拟Fargues-Fontaine curve，道理大概是后者记录Frobenius而Frobenius生成Galois群Gal(\tilde{F}_p/F_p)，模拟到Gal(C/R)就是复共轭，但Frobenius无不动点复共轭有所以正确的模拟是z\mapsto -1/\bar{z}所以自然引进P^1_C商去，这样没有Real point刚好模拟FF无Q_p点；</p>
-<p>为了造Bun_G我们需要相对版本的Twistor P1，模拟相对FF curve用全不连通C代数A造即可；</p>
+<p>Twistor P1模拟Fargues-Fontaine curve，道理大概是后者记录Frobenius而Frobenius生成Galois群Gal(\tilde{F}_p/F_p)，模拟到Gal(C/R)就是复共轭，但FF是无Q_p点的，复共轭却有<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.633ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 722 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="211D" d="M17 665Q17 672 28 683H221Q415 681 439 677Q461 673 481 667T516 654T544 639T566 623T584 607T597 592T607 578T614 565T618 554L621 548Q626 530 626 497Q626 447 613 419Q578 348 473 326L455 321Q462 310 473 292T517 226T578 141T637 72T686 35Q705 30 705 16Q705 7 693 -1H510Q503 6 404 159L306 310H268V183Q270 67 271 59Q274 42 291 38Q295 37 319 35Q344 35 353 28Q362 17 353 3L346 -1H28Q16 5 16 16Q16 35 55 35Q96 38 101 52Q106 60 106 341T101 632Q95 645 55 648Q17 648 17 665ZM241 35Q238 42 237 45T235 78T233 163T233 337V621L237 635L244 648H133Q136 641 137 638T139 603T141 517T141 341Q141 131 140 89T134 37Q133 36 133 35H241ZM457 496Q457 540 449 570T425 615T400 634T377 643Q374 643 339 648Q300 648 281 635Q271 628 270 610T268 481V346H284Q327 346 375 352Q421 364 439 392T457 496ZM492 537T492 496T488 427T478 389T469 371T464 361Q464 360 465 360Q469 360 497 370Q593 400 593 495Q593 592 477 630L457 637L461 626Q474 611 488 561Q492 537 492 496ZM464 243Q411 317 410 317Q404 317 401 315Q384 315 370 312H346L526 35H619L606 50Q553 109 464 243Z"></path></g></g></g></g></svg></mjx-container>点，所以正确的模拟是z\mapsto -1/\bar{z}；为了造Bun_G我们需要相对版本的Twistor P1，模拟相对FF curve用全不连通C代数A造即可；</p>
 <p>自然的解析环是单位圆盘上的过敛函数环搭配气态解析结构，所谓气态解析在复流形上可以看作compact Stein，具体定义不再赘述。这让我们将复解析空间视为C_gas上的解析叠（感觉主要为了保证qcoh紧生成）；</p>
 <p>p进世界的解析棱镜化模拟到复解析棱镜化，细节不再赘述，对于复流形如舒神所说在Div^1上就是解析de Rham叠=Betti叠，在\infty/0处的纤维上就是Hodge-Tate叠的Archimedes模拟，后者值得说道：将相对twistor P1 base change到C上，考虑其在\infty/0点的fibre，注意到对于全不连通C代数A有A/Nil(A)=Cont(S,C)，考虑\infty附近的坐标T=1/z，这个纤维就可以显式写成：AnSpec(Cont(S,C)[T]\times_Cont(S,C) A)/^LT)。大概就是Cont(S,C)[T]从Cont(S,C)基变换到A，然后把T看成拓扑幂零元进一步完备化得到关于T的形式幂级数环，这个基变换再商去T带来的幂零信息就是此AnSpec；这些形式幂级数给出切空间与jet或过敛，HT叠的定义就是在说给你A你有AnSpec(Cont(S,C)[T]\times_Cont(S,C) A)/^LT)打到X这就给出了X切空间过敛邻域并且让你将其识别为gerbe，因为这AnSpec加上后面一坨本来是\infty/0处的纤维所以舒说the trivial gerbe of the overconvergent neighborhood of 0 in the cotangent bundle，但我严重怀疑co是他的笔误；</p>
 <p>p进情形下进制空间X的钻石将特征p完美胚空间打到正置空间加上正置空间到X的态射，在FF curve上正置把Q_p嵌入FF使其成为degree 1除子，所以Archimedes情形复流形X钻石的模拟就是把全不连通代数A打到Div^1_C加上除子到X的态射；</p>
@@ -299,7 +298,19 @@ mjx-container[display="true"] + br {
     
     <div class="post-nav">
   
-    <div class="post-nav-item-left"></div>
+    <a class="post-nav-item-left" href="/2026/04/11/26%E5%B9%B44%E6%9C%88%E6%97%A5%E8%AE%B0/">
+      <div class="text-align">
+        <svg t="1670570876164"
+             class="icon"
+             viewBox="0 0 1024 1024"
+             width="16"
+             height="16">
+          <path d="M384 512L731.733333 202.666667c17.066667-14.933333 19.2-42.666667 4.266667-59.733334-14.933333-17.066667-42.666667-19.2-59.733333-4.266666l-384 341.333333c-10.666667 8.533333-14.933333 19.2-14.933334 32s4.266667 23.466667 14.933334 32l384 341.333333c8.533333 6.4 19.2 10.666667 27.733333 10.666667 12.8 0 23.466667-4.266667 32-14.933333 14.933333-17.066667 14.933333-44.8-4.266667-59.733334L384 512z" p-id="14596" />
+        </svg>
+        <span class="text-small">上一篇</span>
+      </div>
+      <div>26年4月日记</div>
+    </a>
   
   <div class="vhr"></div>
   
